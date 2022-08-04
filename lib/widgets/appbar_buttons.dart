@@ -9,8 +9,8 @@ class AppBarButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
             margin: EdgeInsets.all(10),
-            decoration:const BoxDecoration(
-              color: Colors.grey,
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
               shape: BoxShape.circle,
             ),
             child: IconButton(

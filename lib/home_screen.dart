@@ -1,4 +1,5 @@
-import 'package:facebook_ui/widgets/appBarButtons.dart';
+import 'package:facebook_ui/sections/status_section.dart';
+import 'package:facebook_ui/widgets/appbar_buttons.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,14 +8,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[50],
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
         toolbarHeight: 80,
-        title: const Text(
+        title:  Text(
           'facebook',
           style: TextStyle(
-              color: Colors.blue, fontSize: 26, fontWeight: FontWeight.bold),
+              color: Colors.blue[800], fontSize: 26, fontWeight: FontWeight.bold),
         ),
         actions: [
           AppBarButtons(
@@ -23,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                 print('Go to Search');
               }),
           AppBarButtons(
-            buttonIcon: Icons.message_rounded,
+            buttonIcon: Icons.chat_rounded,
             actionButton: () {
               print('Go to Messenger');
             },
@@ -31,7 +33,11 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        child: Column(),
+        child: ListView(
+          children: [
+            StatusSection(),
+          ],
+        ),
       ),
     );
   }
