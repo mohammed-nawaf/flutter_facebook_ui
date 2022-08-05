@@ -9,14 +9,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget horizontalDivider = Divider(
-      height: 8,
-      thickness: 12,
-      color: Colors.grey[350],
-    );
-
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: Colors.grey[350],
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -29,16 +23,10 @@ class HomeScreen extends StatelessWidget {
               fontWeight: FontWeight.bold),
         ),
         actions: [
-          AppBarButtons(
-              buttonIcon: Icons.search,
-              actionButton: () {
-                print('Go to Search');
-              }),
+          AppBarButtons(buttonIcon: Icons.search, actionButton: () {}),
           AppBarButtons(
             buttonIcon: Icons.chat_rounded,
-            actionButton: () {
-              print('Go to Messenger');
-            },
+            actionButton: () {},
           ),
         ],
       ),
@@ -46,16 +34,27 @@ class HomeScreen extends StatelessWidget {
         child: ListView(
           children: [
             const StatusSection(),
-            Divider(
-              height: 0,
-              thickness: 1,
-            ),
+            horizontalDivider(thickness: 1),
             const HeaderButtons(),
-            horizontalDivider,
-            RoomSection(),
+            SizedBox(height: 10,),
+            const RoomSection(),
+            SizedBox(height: 10),
+            
+            
+          
           ],
         ),
       ),
+    );
+  }
+
+  Divider horizontalDivider({
+    required double thickness,
+  }) {
+    return Divider(
+      height: 0,
+      thickness: thickness, 
+      color: Colors.grey[350],
     );
   }
 }

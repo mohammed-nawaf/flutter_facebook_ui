@@ -15,7 +15,7 @@ class HeaderButtons extends StatelessWidget {
     return Container(
       
       color: Colors.white,
-      height: 55,
+      height: 45,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

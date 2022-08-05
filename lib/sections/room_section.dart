@@ -9,11 +9,14 @@ class RoomSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(10),
+      
       height: 80,
       color: Colors.white,
       child: ListView(
+        
         scrollDirection: Axis.horizontal,
         children: [
+          
           createRoomButton(),
           Avatar(displayImage: dulquer, height: 60, width: 60),
           Avatar(displayImage: fahadfasil, height: 60, width: 60),
