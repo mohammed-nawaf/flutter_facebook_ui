@@ -1,4 +1,5 @@
 import 'package:facebook_ui/sections/header_section.dart';
+import 'package:facebook_ui/sections/room_section.dart';
 import 'package:facebook_ui/sections/status_section.dart';
 import 'package:facebook_ui/widgets/appbar_buttons.dart';
 import 'package:flutter/material.dart';
@@ -51,6 +52,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const HeaderButtons(),
             horizontalDivider,
+            RoomSection(),
           ],
         ),
       ),
