@@ -32,6 +32,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: ListView(
+          physics: const BouncingScrollPhysics(),
           children: [
             const StatusSection(),
             horizontalDivider(thickness: 1),
@@ -40,8 +41,6 @@ class HomeScreen extends StatelessWidget {
             const RoomSection(),
             SizedBox(height: 10),
             
-            
-          
           ],
         ),
       ),

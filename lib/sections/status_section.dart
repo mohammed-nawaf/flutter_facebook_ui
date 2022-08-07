@@ -10,8 +10,8 @@ class StatusSection extends StatelessWidget {
     return ListTile(
       tileColor: Colors.white,
       visualDensity: VisualDensity.adaptivePlatformDensity,
-      contentPadding: EdgeInsets.all(6),
-      leading: Avatar(displayImage: dulquer,height: 60, width: 60,),
+      contentPadding: const EdgeInsets.all(6),
+      leading: Avatar(displayImage: dulquer,height: 60, width: 60, statusIndicator: false),
       title: const TextField(
         decoration: InputDecoration(
             hintText: "What's on your mind?",
