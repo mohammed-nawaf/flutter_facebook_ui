@@ -1,7 +1,8 @@
 import 'package:facebook_ui/sections/header_section.dart';
 import 'package:facebook_ui/sections/room_section.dart';
 import 'package:facebook_ui/sections/status_section.dart';
-import 'package:facebook_ui/widgets/appbar_buttons.dart';
+import 'package:facebook_ui/sections/story_section.dart';
+import 'package:facebook_ui/widgets/circular_button.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,8 +24,8 @@ class HomeScreen extends StatelessWidget {
               fontWeight: FontWeight.bold),
         ),
         actions: [
-          AppBarButtons(buttonIcon: Icons.search, actionButton: () {}),
-          AppBarButtons(
+          CircularButton(buttonIcon: Icons.search, actionButton: () {}),
+          CircularButton(
             buttonIcon: Icons.chat_rounded,
             actionButton: () {},
           ),
@@ -40,7 +41,8 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 10,),
             const RoomSection(),
             SizedBox(height: 10),
-            
+            StorySection(),
+            SizedBox(height: 10),
           ],
         ),
       ),

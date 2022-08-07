@@ -18,14 +18,14 @@ class RoomSection extends StatelessWidget {
         children: [
           
           createRoomButton(),
-          Avatar(displayImage: dulquer, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: fahadfasil, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: jayasurya, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: prithviraj, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: mammooty, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: chackochan, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: mohanlal, height: 60, width: 60, statusIndicator: true),
-          Avatar(displayImage: vijay, height: 60, width: 60, statusIndicator: true),
+          Avatar(displayImage: dulquer),
+          Avatar(displayImage: fahadfasil),
+          Avatar(displayImage: jayasurya),
+          Avatar(displayImage: prithviraj),
+          Avatar(displayImage: mammooty),
+          Avatar(displayImage: chackochan),
+          Avatar(displayImage: mohanlal),
+          Avatar(displayImage: vijay),
         ],
       ),
     );

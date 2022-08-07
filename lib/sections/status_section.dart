@@ -11,7 +11,7 @@ class StatusSection extends StatelessWidget {
       tileColor: Colors.white,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       contentPadding: const EdgeInsets.all(6),
-      leading: Avatar(displayImage: dulquer,height: 60, width: 60, statusIndicator: false),
+      leading: Avatar(displayImage: dulquer, statusIndicator: false, displayBorder: false),
       title: const TextField(
         decoration: InputDecoration(
             hintText: "What's on your mind?",
