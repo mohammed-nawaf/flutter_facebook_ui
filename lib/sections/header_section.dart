@@ -19,9 +19,9 @@ class HeaderButtons extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          
           headerIconButtons(
               buttonAction: () {
-                print('Live Button Clicked');
               },
               buttonIcon: Icons.video_call,
               iconColor: Colors.red,
@@ -30,7 +30,6 @@ class HeaderButtons extends StatelessWidget {
           verticalDivider,
           headerIconButtons(
               buttonAction: () {
-                print('Live Button Clicked');
               },
               buttonIcon: Icons.photo_library,
               iconColor: Colors.green,
@@ -39,7 +38,6 @@ class HeaderButtons extends StatelessWidget {
           verticalDivider,
           headerIconButtons(
               buttonAction: () {
-                print('Live Button Clicked');
               },
               buttonIcon: Icons.live_tv_rounded,
               iconColor: Colors.purple,
@@ -50,7 +48,7 @@ class HeaderButtons extends StatelessWidget {
     );
   }
 
-  TextButton headerIconButtons({
+  Widget headerIconButtons({
     required void Function() buttonAction,
     required IconData buttonIcon,
     required Color iconColor,

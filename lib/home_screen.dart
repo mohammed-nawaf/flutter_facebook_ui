@@ -1,8 +1,10 @@
+import 'package:facebook_ui/assets_refacts.dart';
 import 'package:facebook_ui/sections/header_section.dart';
 import 'package:facebook_ui/sections/room_section.dart';
 import 'package:facebook_ui/sections/status_section.dart';
 import 'package:facebook_ui/sections/story_section.dart';
 import 'package:facebook_ui/widgets/circular_button.dart';
+import 'package:facebook_ui/widgets/post_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -38,11 +40,34 @@ class HomeScreen extends StatelessWidget {
             const StatusSection(),
             horizontalDivider(thickness: 1),
             const HeaderButtons(),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10),
             const RoomSection(),
-            SizedBox(height: 10),
-            StorySection(),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
+            const StorySection(),
+            const SizedBox(height: 10),
+            PostCard(
+              profileImage: mammooty,
+              showBlueTick: true,
+              profileName: 'Mammooty',
+              publishedAt: '5h',
+              postTitle: '',
+              postImage: mammooty,
+              likeCount: '10k',
+              commentCount: '1k',
+              shareCount: '500',
+            ),
+            const SizedBox(height: 10),
+            PostCard(
+              profileImage: prithviraj,
+              showBlueTick: true,
+              profileName: 'prithviraj',
+              publishedAt: '5h',
+              postTitle: '',
+              postImage: prithviraj,
+              likeCount: '10k',
+              commentCount: '1k',
+              shareCount: '500',
+            ),
           ],
         ),
       ),
@@ -54,7 +79,7 @@ class HomeScreen extends StatelessWidget {
   }) {
     return Divider(
       height: 0,
-      thickness: thickness, 
+      thickness: thickness,
       color: Colors.grey[350],
     );
   }

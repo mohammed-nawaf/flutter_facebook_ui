@@ -23,6 +23,7 @@ class StoryCard extends StatelessWidget {
       margin: const EdgeInsets.only(
         left: 5,
         right: 5,
+        top: 10,
         bottom: 10,
       ),
       decoration: BoxDecoration(
@@ -38,7 +39,9 @@ class StoryCard extends StatelessWidget {
                 ? CircularButton(buttonIcon: Icons.add,iconColor: Colors.blue, actionButton: () {})
                 : Avatar(
                     displayImage: profileIcon,
-                    statusIndicator: false),
+                    statusIndicator: false,
+                    width: 40,
+                    height: 40,),
           ),
           Positioned(
               bottom: 10,
